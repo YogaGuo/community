@@ -1,10 +1,12 @@
-## 码匠社区
+# 码匠社区
 
 ### 资料
 * [Spring 文档](https://spring.io/guides/)  
 * [Spring Wed 文档](https://spring.io/guides/gs/serving-web-content/)  
 * [Bootstrap 文档](https://v3.bootcss.com/getting-started/)  
 * [Github OAuth 文档](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
+* [Lombok文档](https://projectlombok.org/)
+* [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html)
 ### 工具
 * [Git 下载地址](https://git-srm.com/download)  
 ### 数据库脚本  
@@ -17,9 +19,9 @@ CREATE TABLE `user` (
   `gmt_create` bigint(20) DEFAULT NULL,
   `gmt_modified` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
-
-
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;  
+```  
+```bash
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```  
 
